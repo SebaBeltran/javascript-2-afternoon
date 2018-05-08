@@ -173,7 +173,7 @@ function makePerson(name, birthday, ssn){
 
 function makeCard (cardNumber, expirationDate, securityCode){
   var newCard = {"cardNumber": cardNumber, "expirationDate": expirationDate, "securityCode": securityCode}
-  return newCard
+  return newCard;
 }
 
 
