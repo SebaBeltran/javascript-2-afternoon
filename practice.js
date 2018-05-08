@@ -15,8 +15,11 @@
 */
 
 //Code here
-
-
+var me ={
+  name: "Jon",
+  age: 24
+}
+//alert(me.name);
 
 ////////// PROBLEM 2 //////////
 
@@ -26,7 +29,14 @@
 */
 
 //Code here
-
+var favoriteThings = {
+  band:"Metallica",
+  food:"Pasta",
+  person: "Friend",
+  book: "One Book",
+  movie: "300",
+  holiday: "Januar 1"
+}
 
 
 /*
@@ -34,7 +44,8 @@
 */
 
 //Code here
-
+favoriteThings.car = "car";
+favoriteThings.brand = "Porsche";
 
 
 /*
@@ -42,6 +53,8 @@
 */
 
 //Code here
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 
@@ -56,6 +69,10 @@
 */
 
 //Code here
+var backPack = {}
+var item = "firstPocket";
+backPack[item] = "chapstick";
+backPack.color = "red";
 
 
 
@@ -63,7 +80,7 @@
   After you do the above, alert your entire backPack object.
 */
 
-//Code here
+console.log(backPack);
 
 
 
@@ -90,6 +107,9 @@ var user2 = {
 };
 // Do not edit the code above.
 
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
+
 /* 
   Let's say I, the user, decided to change my name and email address to the following:
   name -> 'Tyler S. McGinnis' and email -> 'tyler.mcginnis@devmounta.in'. 
@@ -110,8 +130,12 @@ var user2 = {
 
 //Code Here
 
-
-
+var methodCollection = {
+  alertHello: function (){alert("hello")},
+  logHello: function (){console.log("hello")}
+}
+methodCollection.alertHello();
+methodCollection.logHello();
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object. 
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console. 
@@ -126,8 +150,7 @@ var user2 = {
 */
 
 //Code Here
-
-
+ 
 
 ////////// PROBLEM 6 //////////
 
@@ -136,9 +159,10 @@ var user2 = {
   Return a new object with all of the information that you passed in.
 */
 
-//Code Here
-
-
+function makePerson(name, birthday, ssn){
+  var person = {"name": name, "birthday": birthday, "ssn": ssn}
+  return person;
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -147,6 +171,9 @@ var user2 = {
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
 
-//Code Here
+function makeCard (cardNumber, expirationDate, securityCode){
+  var newCard = {"cardNumber": cardNumber, "expirationDate": expirationDate, "securityCode": securityCode}
+  return newCard
+}
 
 
